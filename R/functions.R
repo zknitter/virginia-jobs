@@ -1,4 +1,14 @@
-# functions called by `scope-and-compare-jobs.R`
+# functions called by `step0--set-parameters.R`
+
+## utilities ----
+timestamp <- function (major_sep = "_", minor_sep = ".", time = Sys.time(),
+            time_zone = "America/New_York") {
+    format(
+      time,
+      glue::glue("%Y{minor_sep}%m{minor_sep}%d{major_sep}%H{minor_sep}%M{minor_sep}%S"),
+      tz = time_zone
+      )
+}
 
 ## create relevant urls ----
 compose_agency_url_param <- function(agency_value){
