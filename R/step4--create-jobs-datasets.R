@@ -21,7 +21,7 @@ jobs_data <-
   ) %>%
   select(
     Title,
-    # Agency,
+    Agency,
     EmploymentType,
     PayBand,
     HiringRange,
@@ -31,7 +31,7 @@ jobs_data <-
     LocationGeneral,
     LocationDetail,
     Link,
-    # DateFirstRetrieved
+    DateFirstRetrieved
   )
 
 jobs_data_current <-
