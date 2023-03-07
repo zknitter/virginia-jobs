@@ -46,4 +46,4 @@ write_csv(jobs_data_current, here("data/clean/jobs_data_current.csv"))
 
 
 # Rebuild HTML output ----
-render(here("Rmd", "jobs-data.Rmd"), output_dir = here("docs"))
+render(here("Rmd", "jobs-data.Rmd"), output_file = "index.html", output_dir = here("docs"))
